@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: relmer.Casso
+PackageVersion: 1.23.1
+InstallerType: zip
+NestedInstallerType: portable
+ReleaseDate: 2026-09-06
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/relmer/Casso/releases/download/v1.23.1/Casso-1.23.1-x64.zip
+  InstallerSha256: 7B47D3C5FBAE0DE54FC3511BC5E85AB2A7078231F90548BED916D5A730C91E8E
+  NestedInstallerFiles:
+  - RelativeFilePath: Casso-x64\Casso.exe
+    PortableCommandAlias: Casso
+  - RelativeFilePath: Casso-x64\CassoCli.exe
+    PortableCommandAlias: CassoCli
+- Architecture: arm64
+  InstallerUrl: https://github.com/relmer/Casso/releases/download/v1.23.1/Casso-1.23.1-ARM64.zip
+  InstallerSha256: 9364F3479709B4C1CBD8ABD69839816FB99D93973FC658C88F9D550FFC702F38
+  NestedInstallerFiles:
+  - RelativeFilePath: Casso-ARM64\Casso.exe
+    PortableCommandAlias: Casso
+  - RelativeFilePath: Casso-ARM64\CassoCli.exe
+    PortableCommandAlias: CassoCli
+ManifestType: installer
+ManifestVersion: 1.12.0
